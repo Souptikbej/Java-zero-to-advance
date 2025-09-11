@@ -58,6 +58,5 @@ public class day2 {
         }
         boolean flag = true;
         System.out.println("!flag = " + !flag);
-
     }
 }
