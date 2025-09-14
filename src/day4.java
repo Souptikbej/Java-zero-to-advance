@@ -32,6 +32,16 @@ public class day4 {
             System.out.println();
         }
 
+        System.out.println("1. Print numbers from 1 to 100, but skip multiples of 5.");
+        for (int i=1 ; i<=100 ; i++){
+            if (i%5==0)
+                continue;
+            System.out.print(i+ " ");
+        }
+
+        System.out.println("2. Print first 10 multiples of 7 using a loop.");
+
+
 
     }
 }

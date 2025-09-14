@@ -31,9 +31,9 @@ public class day2 {
         int y=20;
         System.out.println("X = "+x+"\n"+"Y = "+y+"\n");
         if (x > y) {
-            System.out.println("Y is greater than X .");
-        } else {
             System.out.println("X is greater than Y .");
+        } else {
+            System.out.println("Y is greater than X .");
         }
 
 
