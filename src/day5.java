@@ -26,5 +26,45 @@ public class day5 {
             System.out.println("invalid number");
         }
 
+        System.out.println("2. Find Factorial");
+        System.out.println("Enter Number : ");
+        int num1 = obj.nextInt();
+        int fact=1;
+        if (num1<0)
+            System.out.println("Enter positive number.");
+        else if (num1==0)
+            System.out.println("Factorial 0 is 1");
+        else
+            for (int i=1;i<=num1;i++){
+                fact=fact*i;
+            }
+            System.out.println("factorial of "+num1+" is :"+fact);
+
+
+        System.out.println("3. Fibonacci Series");
+        System.out.println("Enter Number of trams : ");
+        int num2 = obj.nextInt();
+        int fibo1=0 , fibo2=1 , fibo3;
+        for (int i=1;i<=num2;i++){
+            System.out.print(fibo1+" ");
+            fibo3=fibo1+fibo2;
+            fibo1=fibo2;
+            fibo2=fibo3;
+        }
+
+
+        System.out.println("\n4. Palindrome Number");
+        System.out.println("Enter Number : ");
+        int num3 = obj.nextInt();
+        int remin,temp=0,depli=num3;
+        while(num3>0){
+            remin=num3%10;
+            temp=temp*10+remin;
+            num3=num3/10;
+        }
+        if (temp==depli)
+            System.out.println("Yes , it's palindrome number.");
+        else
+            System.out.println("No , it's not palindrome number . ");
     }
 }
