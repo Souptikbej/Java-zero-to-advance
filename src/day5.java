@@ -23,7 +23,7 @@ public class day5 {
             System.out.println("No , it Not prime number . ");
         }
         else {
-            System.out.println("invalid");
+            System.out.println("invalid number");
         }
 
     }
