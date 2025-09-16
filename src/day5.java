@@ -65,6 +65,6 @@ public class day5 {
         if (temp==depli)
             System.out.println("Yes , it's palindrome number.");
         else
-            System.out.println("No , it's not palindrome number . ");
+            System.out.println("No , it's not palindrome number .");
     }
 }
