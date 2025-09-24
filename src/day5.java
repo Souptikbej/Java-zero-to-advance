@@ -66,5 +66,29 @@ public class day5 {
             System.out.println("Yes , it's palindrome number.");
         else
             System.out.println("No , it's not palindrome number .");
+
+
+        System.out.println("\n5. Greatest Common Divisor (GCD) LCM (Least Common Multiple)");
+        System.out.println("Enter first Number : ");
+        int num5= obj.nextInt();
+        System.out.println("Enter second Number : ");
+        int num6= obj.nextInt();
+        int gcf_ans = GCF(num5,num6);
+        int lcm_ans=LCM(num5,num6);
+        System.out.println("The Greatest common divisor (GCF) of two numbers are: "+gcf_ans);
+        System.out.println("The Lowest common multiplier (LCM) of two numbers are: "+ lcm_ans);
+
     }
+    public static int GCF(int a, int b){
+        if (b==0){
+            return a;
+        }
+        else {
+            return GCF(b,a%b);
+        }
+    }
+    public static int LCM(int a, int b){
+        return (a * b) / GCF(a, b);
+    }
+
 }
