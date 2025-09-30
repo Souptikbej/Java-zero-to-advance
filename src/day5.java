@@ -67,8 +67,24 @@ public class day5 {
         else
             System.out.println("No , it's not palindrome number .");
 
+        System.out.println("\n5.Reverse a Number,Sum of Digits,Armstrong Number");
+        System.out.println("Enter Number :");
+        int num7= obj.nextInt();
+        int revnum=0,a,SumofDigits=0,Armstrongnum=0,sto_tmp=num7;
+        while (num7>0){
+            a=num7%10;
+            SumofDigits=SumofDigits+a;
+            revnum=revnum*10+a;
+            Armstrongnum=Armstrongnum+(a*a*a);
+            num7=num7/10;
+        }
+        System.out.println("Reverse a Number : "+revnum);
+        System.out.println("Sum of Digits :"+SumofDigits);
+        if (sto_tmp==Armstrongnum){System.out.println("It is Armstrong Number");}
+        else {System.out.println("It not a Armstrong Number");}
 
-        System.out.println("\n5. Greatest Common Divisor (GCD) LCM (Least Common Multiple)");
+
+        System.out.println("\n6. Greatest Common Divisor (GCD) LCM (Least Common Multiple)");
         System.out.println("Enter first Number : ");
         int num5= obj.nextInt();
         System.out.println("Enter second Number : ");
@@ -78,6 +94,17 @@ public class day5 {
         System.out.println("The Greatest common divisor (GCF) of two numbers are: "+gcf_ans);
         System.out.println("The Lowest common multiplier (LCM) of two numbers are: "+ lcm_ans);
 
+
+
+        System.out.println("\n7. Print Number Pyramid");
+        System.out.println("Enter number of step  : ");
+        int num8=obj.nextInt();
+        for (int i=1;i<=num8;i++){
+            for (int j=1;j<=i;j++){
+                System.out.print(j+" ");
+            }
+            System.out.println();
+        }
     }
     public static int GCF(int a, int b){
         if (b==0){
