@@ -1,0 +1,32 @@
+1️⃣ Prime Factors of a Number
+👉 Input: 60 → Output: 2 2 3 5
+
+2️⃣ Strong Number
+👉 A number where sum of factorial of digits = number itself.
+Example: 145 = 1! + 4! + 5!
+
+3️⃣ Perfect Number
+👉 A number equal to sum of its proper divisors.
+Example: 28 = 1 + 2 + 4 + 7 + 14
+
+4️⃣ Binary to Decimal Conversion
+👉 Input: 1011 → Output: 11
+
+5️⃣ Decimal to Binary Conversion
+👉 Input: 11 → Output: 1011
+
+6️⃣ Count Digits in a Number
+👉 Input: 12345 → Output: 5
+
+7️⃣ Sum of First N Natural Numbers (Formula vs Loop)
+👉 Input: 10 → Output: 55
+
+Method to check if a number is prime
+
+Method to find factorial of a number
+
+Method to find GCD of two numbers
+
+Method to check if a string is palindrome
+
+Method to calculate Fibonacci series up to n terms
