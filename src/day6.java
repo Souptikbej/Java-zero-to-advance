@@ -13,6 +13,8 @@ public class day6 {
         int n= obj.nextInt();
         switch (n){
             case 1:
+                System.out.print("Enter number :");
+                int num3= obj.nextInt();
                 prime();
                 System.out.println();
                 break;
@@ -21,7 +23,11 @@ public class day6 {
                 System.out.println();
                 break;
             case 3:
-                System.out.println("The Greatest common divisor (GCF) of two numbers are: "+ GCD());
+                System.out.print("Enter First number :");
+                int num1= obj.nextInt();
+                System.out.print("Enter Second number :");
+                int num2= obj.nextInt();
+                System.out.println("The Greatest common divisor (GCF) of two numbers are: "+ GCD(num1,num2));
                 break;
             case 4:
                 palin();
@@ -35,18 +41,14 @@ public class day6 {
         }
     }
     public static int prime(){
+
         return 0;
     }
     public static int factorial(){
 
         return 0;
     }
-    public static int GCD(){
-        System.out.print("Enter First number :");
-        Scanner obj1=new Scanner(System.in);
-        int num1= obj1.nextInt();
-        System.out.print("Enter Second number :");
-        int num2= obj1.nextInt();
+    public static int GCD(int num1,int num2){
         while (num2 != 0) {
             int temp = num2;
             num2 = num1 % num2;
